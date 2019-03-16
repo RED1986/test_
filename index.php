@@ -1,17 +1,11 @@
 <?php
 interface INotifyProvider {
-    public function sendSms() {
-    }
-    public function sendEmail() {
-    }
+    public function sendSms();
+    public function sendEmail();
 }
 interface IUser {
-    public function getEmail() {
-
-    }
-    public function getPhone() {
-
-    }
+    public function getEmail();
+    public function getPhone();
 }
 class User implements  IUser {
     private $email;
